@@ -1,0 +1,77 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/fondo\ TT.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Formulario de registro */
+.register-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos del tablero */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 2em;
+    cursor: pointer;
+    background: white;
+}
+
+.celda:hover {
+    background: #f0f0f0;
+}
+
+/* Botón de reinicio */
+#reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#reiniciar:hover {
+    background: darkblue;
+}
+
+/* Contador de resultados */
+#contador {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
