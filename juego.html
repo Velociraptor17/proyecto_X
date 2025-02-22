@@ -19,6 +19,30 @@
             <button type="submit">Registrarse</button>
         </form>
     </div>
+
+    <!-- Selección de Modo de Juego -->
+    <div class="game-mode hidden">
+        <h2>Modo de Juego</h2>
+        <select id="modeSelect">
+            <option value="2players">Dos Jugadores</option>
+            <option value="easy">Contra la Computadora (Fácil)</option>
+            <option value="medium">Contra la Computadora (Medio)</option>
+            <option value="hard">Contra la Computadora (Difícil)</option>
+        </select>
+
+        <!-- Selección de Símbolo -->
+        <div class="symbol-selection">
+            <h3>Elige tu símbolo:</h3>
+            <label>
+                <input type="radio" name="symbol" value="X" checked> X
+            </label>
+            <label>
+                <input type="radio" name="symbol" value="O"> O
+            </label>
+        </div>
+
+        <button id="startGame">Comenzar Juego</button>
+    </div>
     
     <!-- Tablero de Ta-Te-Ti -->
     <div id="tablero" class="hidden">
@@ -38,7 +62,7 @@
 
     <!-- Botón para reiniciar el juego -->
     <button id="reiniciar" class="hidden">Reiniciar Juego</button>
-    
+
     <script src="/js/Tateti.js"></script>
 </body>
 </html>
