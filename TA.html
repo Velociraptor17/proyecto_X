@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATETI</title>
+    <link rel="stylesheet" href="./TI.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Bienvenido</h1>
+        <h2>Selecciona un Modo</h2>
+        <button id="vsJugador">Jugador vs Jugador</button>
+        <button id="vsIA">Jugador vs IA</button>
+        <div id="dificultad" style="display: none;">
+            <h2>Selecciona la Dificultad</h2>
+            <button id="facil">Fácil</button>
+            <button id="medio">Medio</button>
+            <button id="dificil">Difícil</button>
+        </div>
+        <div id="contador">
+            <h2>Contador de Victorias</h2>
+            <p>Jugador X: <span id="victoriasX">0</span></p>
+            <p>Jugador O: <span id="victoriasO">0</span></p>
+        </div>
+    </div>
+
+    <div id="juego" style="display: none;">
+        <h1>TATETI</h1>
+        <div id="tablero">
+            <div class="celda" data-index="0"></div>
+            <div class="celda" data-index="1"></div>
+            <div class="celda" data-index="2"></div>
+            <div class="celda" data-index="3"></div>
+            <div class="celda" data-index="4"></div>
+            <div class="celda" data-index="5"></div>
+            <div class="celda" data-index="6"></div>
+            <div class="celda" data-index="7"></div>
+            <div class="celda" data-index="8"></div>
+        </div>
+        <button id="reiniciar">Reiniciar Juego</button>
+    </div>
+
+    <script src="./TE.js"></script>
+</body>
+</html>
