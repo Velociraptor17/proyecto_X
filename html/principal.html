@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Ta-Te-Ti</title>
+    <link rel="stylesheet" href="/css/Estilo.css">
+</head>
+<body>
+    <h1>Ta-Te-Ti</h1>
+    
+    <!-- Formulario de Registro con Selección de Símbolo -->
+    <div class="register-form">
+        <h2>Registro</h2>
+        <form id="registrationForm">
+            <input type="text" id="username" placeholder="Nombre de usuario" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            
+            <!-- Selección de Símbolo antes del botón de registro -->
+            <div class="symbol-selection">
+                <h3>Elige tu símbolo:</h3>
+                <label>
+                    <input type="radio" name="symbol" value="X" checked> X
+                </label>
+                <label>
+                    <input type="radio" name="symbol" value="O"> O
+                </label>
+            </div>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <!-- Contador de resultados -->
+    <div id="contador" class="hidden"></div>
+
+    <script src="/js/Tateti.js"></script>
+</body>
+</html>
