@@ -1,0 +1,277 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/cubitos.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Formulario de registro */
+.register-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Estilos del tablero */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.celda {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #333;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.simbolo-x {
+    color: red;
+}
+
+.simbolo-o {
+    color: blue;
+}
+
+#contador {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.celda:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+/* Botón de reinicio */
+#reiniciar {
+    margin-top: 20px;
+}
+
+/* Contador de resultados */
+#contador {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Modo de juego */
+.game-mode {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    padding: 10px; /* Añadido para dar espacio interno a los encabezados */
+}
+
+h1 {
+    background-color: #87CEEB; /* Color celeste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: white; /* Texto en blanco para mejor contraste */
+}
+
+h2 {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #87CEEB; /* Borde celeste */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno */
+    color: #333; /* Color de texto oscuro */
+}
+
+#bienvenida, #configuracion {
+    text-align: center;
+}
+
+#dificultad {
+    margin-top: 20px;
+}
+
+#configuracion {
+    margin-top: 20px;
+}
+
+#configuracion label {
+    display: block;
+    margin-top: 10px;
+}
+
+#configuracion input {
+    margin-top: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #87CEEB; /* Color celeste para los botones */
+    border: none;
+    border-radius: 5px;
+    color: white; /* Texto en blanco */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #6ca6cd; /* Color celeste más oscuro al pasar el mouse */
+}
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/cubitos.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Botón de ajustes */
+#ajustesBoton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #7fc9fa;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#ajustesBoton:hover {
+    background: #6da1c4;
+}
+
+/* Menú de ajustes */
+#menuAjustes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#menuAjustes.hidden {
+    display: none;
+}
+
+#menuAjustes label {
+    display: block;
+    margin-top: 10px;
+}
+
+#menuAjustes input {
+    margin-top: 5px;
+}
+
+#menuAjustes button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#menuAjustes button:hover {
+    background: #2980b9;
+}
+
+/* Estilo para la selección de símbolo */
+#simbolo-seleccion {
+    margin-top: 20px;
+}
+
+#simbolo-seleccion label {
+    margin-right: 10px;
+}
+
+#simbolo-seleccion button {
+    margin-top: 10px;
+}
